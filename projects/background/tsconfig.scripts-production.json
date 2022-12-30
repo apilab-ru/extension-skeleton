@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "paths": {
+      "environments": ["projects/background/environments/environment.production.ts"],
+      "shared/*": ["projects/shared/*"]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs';
+import { moduleMetadata } from '@storybook/angular';
+import { UserModule } from "../../module";
+
+<Meta
+  title="User / Form"
+  decorators={[
+    moduleMetadata({
+      imports: [
+        UserModule,
+      ],
+      providers: []
+    })
+  ]}
+/>
+
+export const Template = args => ({
+  template: `
+    <div style="padding: 20px">
+      <shared-user-form
+          [user]="user"
+      ></shared-user-form>
+    </div>
+  `,
+  props: {
+    user: {
+      name: args.name,
+      git: args.git,
+    }
+  },
+});
+
+<Preview>
+  <Story
+    name="Default"
+    args={{
+      name: 'Viktor',
+      git: 'apilab-ru'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Preview>

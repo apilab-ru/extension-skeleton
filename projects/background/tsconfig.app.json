@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "types": [],
+    "sourceMap": false,
+    "module": "commonjs",
+    "target": "es5",
+    "paths": {
+      "environments": ["projects/background/environments/environment.production.ts"],
+      "shared/*": ["projects/shared/*"]
+    }
+  },
+  "files": ["./src/background.ts"],
+  "include": [],
+}
