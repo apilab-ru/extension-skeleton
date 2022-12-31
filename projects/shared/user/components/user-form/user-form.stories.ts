@@ -1,4 +1,4 @@
-import { Meta, Story, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
+import { Meta, StoryFn, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
 import { UserModule } from "shared/user";
 import { UserFormComponent } from "./user-form.component";
 
@@ -15,7 +15,7 @@ export default {
   title: 'TaskList',
 } as Meta;
 
-const Template: Story = args => ({
+const Template: StoryFn = args => ({
   props: {
     ...args,
   },
