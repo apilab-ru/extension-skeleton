@@ -12,7 +12,7 @@
     "start:ts": "webpack --mode development --config ./projects/background/webpack.config.js --env=browser -w",
     "watch:ts": "webpack --mode development --config ./projects/background/webpack.config.js --env=development -w",
     "build:ts": "webpack --config ./projects/background/webpack.config.js --env=production --devtool=false",
-    "shared:storybook": "start-storybook -p 6006",
+    "shared:storybook": "ng run shared:storybook",
     "build": "npm run copy && npm run build:ts && npm run build:cabinet && npm run build:popup",
     "copy": "copyfiles -f ./projects/extension/* ./dist",
     "test": "ng test"
@@ -37,6 +37,7 @@
     "@angular/cli": "~15.0.4",
     "@angular/compiler-cli": "^15.0.0",
     "@storybook/addon-essentials": "7.0.0-beta.17",
+    "@storybook/addon-docs": "^7.0.0-beta.17",
     "@storybook/addons": "7.0.0-beta.17",
     "@storybook/angular": "7.0.0-beta.17",
     "@storybook/builder-webpack5": "7.0.0-beta.17",
