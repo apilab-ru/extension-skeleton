@@ -27,7 +27,10 @@
     "paths": {
       "background": ["projects/background/index.ts"],
       "shared/*": ["projects/shared/*"]
-    }
+    },
+    "types": [
+      "chrome"
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

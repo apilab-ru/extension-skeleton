@@ -260,7 +260,6 @@
       "root": "projects/shared",
       "sourceRoot": "projects/shared/src",
       "prefix": "shared",
-
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
