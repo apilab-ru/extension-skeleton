@@ -1,5 +1,5 @@
 import { GithubRepo } from "shared/github";
-import { User } from "shared/user";
+import { User } from "shared/user/interface";
 
 type Optional<T> = T | undefined;
 

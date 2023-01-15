@@ -1,4 +1,4 @@
-import { User } from "shared/user";
+import { User } from "shared/user/interface";
 import { Reducer } from "./reducer";
 import { Store } from "../store";
 
